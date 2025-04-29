@@ -15,12 +15,13 @@ def home():
     return (
         "<h1>Salary Prediction API</h1>"
         "<p>BAIS:3300 - Digital Product Development</p>"
-        "<p>Mike Colbert</p>"
+        "<p>Joel Garcia</p>"
     )
 
 
-@app.route("/predict", methods=["POST"])
+@app.route("/predict", methods=["GET"])
 def predict():
+    return "<h1>Prediction route is working... </h1>"
     """
     Predict salary based on input JSON payload
     Expected keys: age, gender, country, highest_deg, coding_exp, title, company_size
